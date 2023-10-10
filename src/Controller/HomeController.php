@@ -13,7 +13,7 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('home/base.html.twig', [
+        return $this->render('home/index.html.twig', [
             'title' => 'Page d\'accueil',
         ]);
     }

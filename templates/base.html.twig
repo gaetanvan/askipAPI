@@ -10,15 +10,13 @@
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
+            <script src="{{ asset('build/app.js') }}"></script>
         {% endblock %}
     </head>
     <body>
         {% block body %}
             <div id="map" style="height: 400px;"></div>
 
-        {% block javascripts %}
-            <script src="{{ asset('build/app.js') }}"></script>
-        {% endblock %}
         {% endblock %}
     </body>
 </html>

@@ -6,3 +6,13 @@ controllers:
 home:
     path: /
     controller: App\Controller\HomeController::index
+
+app_register:
+    path: '/api/register'
+    controller: 'App\Controller\UserController::register'
+    methods: [ 'POST' ]
+
+app_login:
+    path: '/api/login'
+    controller: 'App\Controller\SecurityController::login'
+    methods: [ 'POST' ]
